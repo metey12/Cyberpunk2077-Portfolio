@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Mete Yıldırım | Kişisel Web Sitesi</title>
+    
+    <meta name="description" content="Mete Yıldırım, Tekirdağ Namık Kemal Üniversitesi Bilgisayar Mühendisliği öğrencisi. C#, Java, .NET ve Backend teknolojileri üzerine kişisel portfolyo ve proje arşivi.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Mete Yıldırım">
+    
+
+    <meta property="og:title" content="Mete Yıldırım | Bilgisayar Mühendisi & Full-Stack Developer">
+    <meta property="og:description" content="Full-Stack Developer & Netrunner tarzı portföy sitesi. Projelerimi keşfedin.">
+    <meta property="og:url" content="https://meteyildirim.net">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mete Yıldırım",
+  "alternateName": "Mete Yildirim",
+  "url": "https://meteyildirim.net",
+  "jobTitle": "Bilgisayar Mühendisi & Full-Stack Developer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Freelance / Data-Net Bilgisayar"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Tekirdağ Namık Kemal Üniversitesi"
+  },
+  "sameAs": [
+    "https://github.com/metey12",
+    "https://instagram.com/metey12"
+  ]
+}
+    </script>
+</head>
+<body>
+
+    <div class="noise-overlay"></div>
+    <div class="crt-overlay"></div>
+    <div class="bg-grid"></div>
+    <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div><div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" style="font-size:1.5rem; font-weight:900; color:#fff;">
+                <span style="color:var(--cp-blue)">METEYILDIRIM</span>.NET
+            </a>
+            <div class="nav-menu">
+                <a href="#hero" class="nav-link" data-hack="HOME">HOME</a>
+                <a href="#projects" class="nav-link" data-hack="MISSIONS">MISSIONS</a>
+                <a href="#experience" class="nav-link" data-hack="CORP">CORP</a>
+                <a href="#education" class="nav-link" data-hack="LOGS">LOGS</a>
+                <a href="#hardware" class="nav-link" data-hack="RIG">RIG</a>
+                <a href="#contact" class="nav-link" data-hack="COMMS">COMMS</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div style="border-left: 5px solid var(--cp-yellow); padding-left: 30px; background: rgba(0,0,0,0.6);">
+                    <p style="color: var(--cp-blue); letter-spacing: 2px; margin-bottom: 10px;">> WAKE THE F*CK UP, SAMURAI.</p>
+                    
+                    <h1 class="glitch-title" data-text="METE YILDIRIM">METE YILDIRIM</h1>
+                    
+                    <h2 style="font-size: 1.8rem; margin-bottom: 30px; color: #fff; margin-top: 10px;">
+                        <span style="background: var(--cp-red); padding: 2px 10px; color:#000;">NETRUNNER</span> & FULL-STACK DEV
+                    </h2>
+                    
+                    <p style="max-width: 600px; font-size: 1.2rem; margin-bottom: 40px; color: #ccc; border-left: 3px solid var(--cp-blue); padding-left: 15px; line-height: 1.6;">
+                        Merhaba ben Mete Yıldırım! Tekirdağ Namık Kemal Üniversitesi'nde Bilgisayar Mühendisliği öğrencisiyim.
+                        <br><br>
+                        <small style="color:var(--cp-yellow);">>> PROTOCOL: Portföy verilerine erişmek için sağdaki şifreyi çöz.</small>
+                    </p>
+                    
+                    <div>
+                        <a href="#projects" class="btn">GÖREVLERİ BAŞLAT</a>
+                        <a href="#contact" class="btn btn-outline">BAĞLANTI KUR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="breach-game-wrapper">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 10px; border-bottom: 1px solid var(--cp-yellow);">
+                    <span style="color:var(--cp-yellow); font-weight:bold;">BREACH PROTOCOL v.2.4</span>
+                    <span id="timer" style="color:var(--cp-red); font-weight:bold;">00.45.00</span>
+                </div>
+
+                <div style="color: #aaa; font-size: 0.8rem; margin-bottom: 5px;">REQUIRED SEQUENCE</div>
+                <div class="target-sequence" id="target-seq"></div>
+
+                <div style="color: #aaa; font-size: 0.8rem; margin-bottom: 5px;">MATRIX</div>
+                <div class="matrix-grid" id="matrix"></div>
+
+                <div style="color: #aaa; font-size: 0.8rem; margin-bottom: 5px;">BUFFER (MEMORY)</div>
+                <div class="buffer-display" id="buffer"></div>
+
+                <div class="game-status" id="game-status"></div>
+                <button class="restart-btn" id="restart-btn" onclick="initGame()">REBOOT SYSTEM</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-header" data-hack="GÖREV KAYITLARI">GÖREV KAYITLARI</h2>
+            <div class="grid-3">
+                <div class="cyber-box">
+                    <div class="project-img"><img src="img/bashfolio.png" alt="Mete Yıldırım Bashfolio Kişisel Portfolyo Projesi"></div>
+                    <div style="padding-top: 20px;">
+                        <span style="color:var(--cp-blue); font-size:0.9rem;">[TAILWIND] [REACT]</span>
+                        <h3 style="margin: 10px 0; font-size: 1.5rem;">BASHFOLIO</h3>
+                        <p style="color:#999;">Terminal arayüzü benzeri bir kullanıcı deneyimi sunan etkileşimli bir kişisel portfolyo uygulamasıdır</p>
+                    </div>
+                </div>
+                <div class="cyber-box" style="border-color: var(--cp-red);">
+                    <div class="project-img" style="border-color: var(--cp-red);"><img src="/img/dersYonetimSistemi.png" alt="Mete Yıldırım Ders Yönetim Sistemi Projesi"></div>
+                    <div style="padding-top: 20px;">
+                        <span style="color:var(--cp-red); font-size:0.9rem;">[ASP.NET Core MVC] [Entity Framework Core (Code First)] [ASP.NET Identity] [Bootstrap 5]</span>
+                        <h3 style="margin: 10px 0; font-size: 1.5rem;">VALORANT AUTO LOGIN</h3>
+                        <p style="color:#999;">Öğretmen ve öğrenciler için ders yönetimi, içerik paylaşımı ve kullanıcı yönetimi gibi işlevleri barındırır.</p>
+                    </div>
+                </div>
+                <div class="cyber-box" style="border-color: var(--cp-blue);">
+                    <div class="project-img" style="border-color: var(--cp-blue);"><img src="/img/ogrenciSistemi.png" alt="Mete Yıldırım Öğrenci Yönetim Sistemi Projesi"></div>
+                    <div style="padding-top: 20px;">
+                        <span style="color:var(--cp-blue); font-size:0.9rem;">[TAILWIND] [REACT]</span>
+                        <h3 style="margin: 10px 0; font-size: 1.5rem;">OGRENCI SISTEMI</h3>
+                        <p style="color:#999;">Öğrencileri, sınıflarını ve derslerini yönetmek için geliştirilmiş modern bir web uygulamasıdır.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 60px; position: relative;">
+                
+                <div style="width: 2px; height: 40px; background: var(--cp-yellow); margin: 0 auto 20px auto; opacity: 0.5;"></div>
+                
+                <a href="https://github.com/metey12" target="_blank" class="btn" style="padding: 20px 60px; font-size: 1.2rem; display: inline-flex; align-items: center; gap: 10px;">
+                    <i class="fab fa-github" style="font-size: 1.5rem;"></i>
+                    <span data-hack="ACCESS_ARCHIVES">TÜM ARŞİVE ERİŞ (GITHUB)</span>
+                </a>
+
+                <div style="color: var(--cp-blue); font-size: 0.8rem; margin-top: 15px; letter-spacing: 3px; animation: blink 3s infinite;">
+                    >> EXTERNAL_DATABASE_LINK_DETECTED
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-header" style="border-color: var(--cp-red); background: rgba(255, 0, 60, 0.1); color: #fff;" data-hack="DENEYİM MODÜLÜ">DENEYİM MODÜLÜ</h2>
+            <div class="cyber-box" style="border-left: 5px solid var(--cp-yellow); border-right: none;">
+                <div style="position: absolute; right: 20px; top: 10px; font-size: 4rem; opacity: 0.05; font-weight: 900; pointer-events: none;">CORP_LOG</div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; margin-bottom: 25px; position: relative; z-index: 2;">
+                    <div>
+                        <h3 style="font-size: 2.2rem; color: var(--cp-yellow); text-shadow: 0 0 15px rgba(252, 238, 10, 0.4); margin-bottom: 5px;">DATA-NET BİLGİSAYAR</h3>
+                        <div style="display: inline-block; background: var(--cp-blue); color: #000; padding: 4px 15px; font-weight: 900; font-size: 1rem;">FULL STACK WEB DEVELOPER</div>
+                    </div>
+                    <div style="text-align: right; margin-top: 10px;">
+                        <div style="color: #fff; font-size: 1.4rem; font-weight: bold;">2025 AĞUSTOS - EYLÜL</div>
+                        <div style="color: var(--cp-red); font-size: 0.9rem; letter-spacing: 3px; margin-top: 5px;">[STAJYER PROTOKOLÜ]</div>
+                    </div>
+                </div>
+                <p style="color: #ccc; margin-bottom: 30px; line-height: 1.7; font-size: 1.1rem; border-left: 2px solid #333; padding-left: 20px;">
+                    Kurumsal düzeyde web mimarisi geliştirme süreçlerine katılım sağlandı. Backend ve Frontend entegrasyonları, veri tabanı yönetimi ve modern web teknolojileri üzerine çalışmalar yürütüldü.
+                </p>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                    <div class="skill-chip" style="width: auto; margin: 0; padding: 5px 15px; font-size: 0.8rem; border-color: var(--cp-blue);">ASP.NET CORE MVC</div>
+                    <div class="skill-chip" style="width: auto; margin: 0; padding: 5px 15px; font-size: 0.8rem; border-color: var(--cp-blue);">WEB API</div>
+                    <div class="skill-chip" style="width: auto; margin: 0; padding: 5px 15px; font-size: 0.8rem; border-color: var(--cp-blue);">REACT</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2 class="section-header" style="border-color: #fff; background: rgba(255,255,255,0.1);" data-hack="AKADEMİK LOGLAR">AKADEMİK LOGLAR</h2>
+            <div class="grid-2">
+                <div class="cyber-box" style="background: rgba(252, 238, 10, 0.05);">
+                    <div style="position: absolute; top: 3px; left: 20px; background: var(--cp-yellow); color: #000; font-weight: bold; padding: 2px 10px; font-size: 0.8rem;">>> CURRENT_OBJECTIVE</div>
+                    <h3 style="color: var(--cp-yellow); font-size: 1.6rem; margin-top: 10px;">TEKİRDAĞ NAMIK KEMAL ÜNİV.</h3>
+                    <p style="color: #fff; letter-spacing: 1px; margin-bottom: 15px;">// BİLGİSAYAR MÜHENDİSLİĞİ (3. SINIF)</p>
+                    <div style="background: rgba(0,0,0,0.5); padding: 15px; border-left: 3px solid var(--cp-yellow); display: flex; align-items: center; justify-content: space-between;">
+                        <span style="color: #aaa;">DURUM:</span>
+                        <span style="color: var(--cp-yellow); font-weight: bold; animation: blink 2s infinite;">AKTİF EĞİTİM</span>
+                    </div>
+                    <div style="margin-top: 15px; font-size: 1.2rem;">GÜNCEL GANO: <span style="color: var(--cp-yellow); font-weight: 900; font-size: 1.5rem;">3.07</span></div>
+                </div>
+                <div class="cyber-box" style="border-color: #555; background: rgba(20,20,20,0.4);">
+                    <div style="position: absolute; top: 3px; left: 20px; background: #555; color: #fff; font-weight: bold; padding: 2px 10px; font-size: 0.8rem;">>> ARCHIVED_DATA</div>
+                    <h3 style="color: #aaa; font-size: 1.6rem; margin-top: 10px;">ÇANKIRI KARATEKİN ÜNİV.</h3>
+                    <p style="color: #888; letter-spacing: 1px; margin-bottom: 15px;">// BİLGİSAYAR MÜHENDİSLİĞİ</p>
+                    <div style="background: rgba(0,0,0,0.5); padding: 15px; border-left: 3px solid #555; display: flex; align-items: center; justify-content: space-between;">
+                        <span style="color: #666;">İŞLEM:</span>
+                        <span style="color: #aaa; text-decoration: line-through;">VERİ AKTARILDI</span>
+                    </div>
+                    <div style="margin-top: 15px; font-size: 1.1rem; color: #666;">KAYITLI GANO: <span>3.27</span> (YATAY GEÇİŞ)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hardware">
+        <div class="container">
+            <h2 class="section-header" style="border-color: var(--cp-blue); background: rgba(0,240,255,0.1);" data-hack="DONANIM & YETENEK">DONANIM (RIG)</h2>
+            <div class="grid-3">
+                <div class="terminal-box">
+                    <div class="terminal-inner">
+                        <h3 style="color:var(--cp-blue); margin-bottom: 20px;">// ANA İŞ İSTASYONU</h3>
+                        <div class="spec-row"><span style="color:#666">CPU</span><span class="spec-highlight">Ryzen 7 7800X3D</span></div>
+                        <div class="spec-row"><span style="color:#666">GPU</span><span class="spec-highlight">RTX 4070 Ti Super</span></div>
+                        <div class="spec-row"><span style="color:#666">RAM</span><span>32GB DDR5</span></div>
+                        <div class="spec-row"><span style="color:#666">OS</span><span>Windows 11</span></div>
+                        <div class="spec-row"><span>STATUS</span><span style="color:#0f0">ONLINE</span></div>
+                    </div>
+                </div>
+                <div class="terminal-box" style="border-color: var(--cp-red);">
+                    <div class="terminal-inner" style="border-color: var(--cp-red);">
+                        <h3 style="color:var(--cp-red); margin-bottom: 20px;">// MOBİL ÜNİTE</h3>
+                        <div class="spec-row"><span style="color:#666">CPU</span><span>Intel i7 10750H</span></div>
+                        <div class="spec-row"><span style="color:#666">GPU</span><span style="color:var(--cp-red)">RTX 2060 Mobile</span></div>
+                        <div class="spec-row"><span style="color:#666">RAM</span><span>16GB DDR4</span></div>
+                        <div class="spec-row"><span style="color:#666">OS</span><span>Windows 10</span></div>
+                        <div class="spec-row"><span>STATUS</span><span style="color:var(--cp-yellow)">PORTABLE</span></div>
+                    </div>
+                </div>
+                <div>
+                     <h3 style="color:var(--cp-yellow); margin-bottom: 20px; font-size: 1.2rem;">// YETENEK ÇİPLERİ</h3>
+                     <div class="skill-chip"><i class="fas fa-code"></i> C# / .NET CORE</div>
+                     <div class="skill-chip"><i class="fas fa-coffee"></i> JAVA / OOP / SWING</div>
+                     <div class="skill-chip"><i class="fab fa-react"></i> REACT / JS / WEB</div>
+                     <div class="skill-chip"><i class="fas fa-database"></i> SQL / ENTITY FRAMEWORK</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container" style="max-width: 700px;">
+            <div class="cyber-box">
+                <h2 style="color:var(--cp-yellow); margin-bottom: 30px;">GÜVENLİ FREKANS (İLETİŞİM)</h2>
+                <form>
+                    <input type="text" class="cyber-input" placeholder="KOD ADINIZ [GEREKLİ]" required>
+                    <input type="email" class="cyber-input" placeholder="DİJİTAL İMZA (EMAIL)" required>
+                    <textarea class="cyber-input" rows="5" placeholder="ŞİFRELİ MESAJINIZ..." required></textarea>
+                    <button type="submit" class="btn" style="width: 100%;">VERİYİ GÖNDER</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" style="text-align: center;">
+            <h2 style="color: var(--cp-yellow); font-size: 2rem;">METE YILDIRIM</h2>
+            <div style="margin: 20px 0; font-size: 1.5rem;">
+                <a href="https://github.com/metey12" style="margin: 0 10px; color: var(--cp-blue);"><i class="fab fa-github"></i></a>
+                <a href="#" style="margin: 0 10px; color: var(--cp-blue);"><i class="fab fa-linkedin"></i></a>
+                <a href="#" style="margin: 0 10px; color: var(--cp-blue);"><i class="fas fa-instagram"></i></a>
+            </div>
+            <p style="color:#555; font-size: 0.9rem;">© 2077 NIGHT CITY NETWORK. BAĞLANTI KESİLDİ.</p>
+        </div>
+    </footer>
+<div class="chat-toggle" onclick="toggleChat()">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <span>AI_ASSISTANT v2.5</span>
+            <span style="cursor:pointer;" onclick="toggleChat()">[X]</span>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="msg msg-ai">
+    >> BAĞLANTI KURULDU.<br>
+    Hoş geldin Samurai. Bu terminal <strong>Cyberpunk 2077</strong> estetiği ile tasarlanmıştır.<br><br>
+    Nasıl yardımcı olabilirim?
+</div>
+        </div>
+        <div class="typing-indicator" id="typingIndicator" style="padding-left: 15px; margin-bottom: 5px;">
+            >> SİSTEM YANIT OLUŞTURUYOR...
+        </div>
+        <div class="chat-input-area">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Mesaj yaz..." onkeypress="handleEnter(event)">
+            <button class="chat-send" onclick="sendMessage()">></button>
+        </div>
+    </div>
+    <script src="/script/script.js"></script>
+    
+</body>
+</html>
