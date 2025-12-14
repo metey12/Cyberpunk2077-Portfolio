@@ -56,3 +56,6 @@ Canlı bir **netrunner terminali** hissi vermek, klasik portföy anlayışını 
 - **cURL**
 - JSON tabanlı REST iletişimi
 
+
+  Canlı Test: https://meteyildirim.net
+
