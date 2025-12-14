@@ -5,6 +5,17 @@
 
 Canlı bir **netrunner terminali** hissi vermek, klasik portföy anlayışını kırmak ve ziyaretçiyi doğrudan etkileşime sokmak amacıyla geliştirilmiştir.
 
+<img width="2559" height="1256" alt="image" src="https://github.com/user-attachments/assets/8d52759f-b623-4784-b463-7a5650286a9e" />
+<img width="2559" height="1258" alt="image" src="https://github.com/user-attachments/assets/8ebfe0dc-cc06-4167-a29d-6575f909aa08" />
+<img width="2557" height="1258" alt="image" src="https://github.com/user-attachments/assets/11f08562-fcec-4913-9762-c8aaf1ddb636" />
+<img width="2559" height="1267" alt="image" src="https://github.com/user-attachments/assets/e0aeaad2-340d-45e0-82f6-5bf76cbd2d6f" />
+<img width="2559" height="1261" alt="image" src="https://github.com/user-attachments/assets/7e208718-3795-4b56-b13c-5edc5d91b1fb" />
+
+
+
+
+
+
 ---
 
 ## 🧠 PROJE ÖZETİ
